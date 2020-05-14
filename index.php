@@ -1,6 +1,6 @@
 <?php 
 /**
-* Plugin Name: Random Password Genrator
+* Plugin Name: Strong Password Maker 
 * Plugin URI:
 * Description:A plugin for generating random password.
 * Version:1.0

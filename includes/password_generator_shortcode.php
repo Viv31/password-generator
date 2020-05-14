@@ -2,11 +2,13 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 //echo plugins_url('',__FILE__); die;
 
-if(!function_exists('RPG_password_generator')){
-function RPG_password_generator(){
+
+if(!function_exists('SPG_password_generator')){
+function SPG_password_generator(){
 ?>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script type="text/javascript" src="<?php echo plugins_url('',__FILE__).'/SPG_jquery.js';?>"></script>
+	
 	<style type="text/css">
 		#generated_password{
   		background-color: lightgrey;
@@ -46,9 +48,9 @@ function RPG_password_generator(){
 		<h4>Password Generator</h4>
 		<img src="<?php echo plugins_url('',__FILE__).'/pg.png'?>" height="100" width="auto">
 		<div id="generated_password"></div>
-		 <form  method="POST" > 
+		  <form  method="POST" action="" > 
 				<div class="form-group">
-					<input type="checkbox" name="all" value="all" onchange="return generate_pw();"> All
+					<input type="checkbox" name="all" value="all" onchange = "return generate_pw();"> All
 				</div>
 				<div class="form-group">
 					<input type="checkbox" name="only_alphabet" value="only_alphabet" onchange="return generate_pw();"> Alphabet Only
@@ -64,7 +66,7 @@ function RPG_password_generator(){
 					<input type="number" name="length" id="length" class="form-control" onkeyup="return generate_pw(this.value);" placeholder="Default value is 30">
 				</div>
 				
-				 </form> 
+				  </form> 
 			
 	</div>
 	<script type="text/javascript">
@@ -100,7 +102,7 @@ function RPG_password_generator(){
 				url:plugin_path,
 				data:data,
 				success:function(res){
-					alert(res);
+					//alert(res);
 					jQuery("#generated_password").html(res);
 
 				}
@@ -117,5 +119,5 @@ function RPG_password_generator(){
 	}
 
 }
-add_shortcode('Generate-Password','RPG_password_generator'); //First aparameter is slider name and second parameter is function  name
+add_shortcode('Generate-Password','SPG_password_generator'); //First aparameter is Shortcode name and second parameter is function  name
 ?>

@@ -1,7 +1,7 @@
-== dynamic Image Slider  ==
+== Strong Password Generator  ==
 Contributors: vaibhav31gangrade
 Donate link: 
-Tags: Password Generator,Random Password Generator
+Tags: Password Generator,Strong  Password Generator
 Requires at least: 4.6
 Tested up to: 5.2
 Stable tag: 5.2
@@ -15,15 +15,16 @@ A Plugin for generating random pasword with numbers only ,characters only ,speci
 
 == How to Use ==
 
-After installing plugin add post with  featured image   and post this shortcode it will generate a shortcode [Dynamic-Image-Slider] use this shortcode wherever you want to use.
+After Installing Paste Shortcode [Generate-Password] whereever you want use this plugin.
+After Pasting shortcode you will see a form with multiple options like All,Only Alphabet,Only Numbers,Only special charaters and Also define length of your password and it will generate a password according to your input.
 
 == Requirements ==
 it can run on any wordpress version it reqiores only html and css and some basic javascript.
 
 == Frequently Asked Questions ==
 
-= Can i remove border of slider? =
-yes just use border width value 0.
+= What happend if i will not insert length? =
+  If length is not inserted to it will generate password of length 30.
 
 
  == Changelog == 
@@ -36,7 +37,7 @@ yes just use border width value 0.
 This version fixes a security related bug.Upgrade immediately.
 
  = 1.0 =
-For more efficiency of image and there dimensions.
+Password generation with various options.
 
 
 
