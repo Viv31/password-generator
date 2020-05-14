@@ -1,4 +1,4 @@
-== Strong Password Generator  ==
+== Strong Password Maker  ==
 Contributors: vaibhav31gangrade
 Donate link: 
 Tags: Password Generator,Strong  Password Generator
